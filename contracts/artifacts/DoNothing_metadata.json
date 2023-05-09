@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "doNothing",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/03_DoNothing.sol": "DoNothing"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/03_DoNothing.sol": {
+			"keccak256": "0xd0eb2511e52aac9facd0bf458dc0e25064434271d11f3271ae1188a26cc388c7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4e4c8e152ddd6b4e3d179b0d8e4ff441441b2b4c12cbd5ad5732a99231b945e3",
+				"dweb:/ipfs/QmcZRMyJZ3QruaYBdTNrmzVtRw27MsN2G4xf8uZ2rqBC1b"
+			]
+		}
+	},
+	"version": 1
+}

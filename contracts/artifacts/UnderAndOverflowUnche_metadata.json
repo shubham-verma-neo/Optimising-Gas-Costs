@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "add156",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "subtract101",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/04_UnderAndOverflow.sol": "UnderAndOverflowUnche"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/04_UnderAndOverflow.sol": {
+			"keccak256": "0x22ef292712da388eb9083309baf3b62bfe1c1b99a041c6d68e647043620cceff",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dcea6d96c81939dd1fc1a1d7aca5f75bc48dc37ea55b993b15a49eea6a0eb288",
+				"dweb:/ipfs/QmbWzPRqGW7KQJ6sJ1fwEdxsKrbKXpQ2KKja18Xqs6G9Bg"
+			]
+		}
+	},
+	"version": 1
+}

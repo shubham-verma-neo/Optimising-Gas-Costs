@@ -1,0 +1,543 @@
+{
+	"id": "51013531942d277f0da2fd9ca334b547",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.0",
+	"solcLongVersion": "0.8.0+commit.c7dfd78e",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/03_DoNothing.sol": {
+				"content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract DoNothing{\n    /*\n    Non-payable\n\n    gas\t                24362 gas\n    transaction cost\t21184 gas \n    execution cost\t    120 gas \n\n    Op-code in case non-payable\n\n    .code\n      PUSH 80\t\t\tcontract DoNothing{\\n    /*\\n ...\n      PUSH 40\t\t\tcontract DoNothing{\\n    /*\\n ...\n      MSTORE \t\t\tcontract DoNothing{\\n    /*\\n ...\n      CALLVALUE \t\t\tcontract DoNothing{\\n    /*\\n ...\n      DUP1 \t\t\tcontract DoNothing{\\n    /*\\n ...\n      ISZERO \t\t\tcontract DoNothing{\\n    /*\\n ...\n      PUSH [tag] 1\t\t\tcontract DoNothing{\\n    /*\\n ...\n      JUMPI \t\t\tcontract DoNothing{\\n    /*\\n ...\n      PUSH 0\t\t\tcontract DoNothing{\\n    /*\\n ...\n      DUP1 \t\t\tcontract DoNothing{\\n    /*\\n ...\n      REVERT \t\t\tcontract DoNothing{\\n    /*\\n ...\n    tag 1\t\t\tcontract DoNothing{\\n    /*\\n ...\n      JUMPDEST \t\t\tcontract DoNothing{\\n    /*\\n ...\n      POP \t\t\tcontract DoNothing{\\n    /*\\n ...\n      PUSH 4\t\t\tcontract DoNothing{\\n    /*\\n ...\n      CALLDATASIZE \t\t\tcontract DoNothing{\\n    /*\\n ...\n      LT \t\t\tcontract DoNothing{\\n    /*\\n ...\n      PUSH [tag] 2\t\t\tcontract DoNothing{\\n    /*\\n ...\n      JUMPI \t\t\tcontract DoNothing{\\n    /*\\n ...\n      PUSH 0\t\t\tcontract DoNothing{\\n    /*\\n ...\n      CALLDATALOAD \t\t\tcontract DoNothing{\\n    /*\\n ...\n      PUSH E0\t\t\tcontract DoNothing{\\n    /*\\n ...\n      SHR \t\t\tcontract DoNothing{\\n    /*\\n ...\n      DUP1 \t\t\tcontract DoNothing{\\n    /*\\n ...\n      PUSH ED8FD55C\t\t\tcontract DoNothing{\\n    /*\\n ...\n      EQ \t\t\tcontract DoNothing{\\n    /*\\n ...\n      PUSH [tag] 3\t\t\tcontract DoNothing{\\n    /*\\n ...\n      JUMPI \t\t\tcontract DoNothing{\\n    /*\\n ...\n    tag 2\t\t\tcontract DoNothing{\\n    /*\\n ...\n      JUMPDEST \t\t\tcontract DoNothing{\\n    /*\\n ...\n      PUSH 0\t\t\tcontract DoNothing{\\n    /*\\n ...\n      DUP1 \t\t\tcontract DoNothing{\\n    /*\\n ...\n      REVERT \t\t\tcontract DoNothing{\\n    /*\\n ...\n    tag 3\t\t\tfunction doNothingV1()external...\n      JUMPDEST \t\t\tfunction doNothingV1()external...\n      STOP \t\t\tfunction doNothingV1()external...\n    .data\n\n====================================================================\n\n    Payable\n\n    gas                 24309 gas\n    transaction cost\t21138 gas \n    execution cost      74 gas\n\n    Op-code in case payable\n\n    .code\n        PUSH 80\t\t\tcontract DoNothing{\\n    /*\\n ...\n        PUSH 40\t\t\tcontract DoNothing{\\n    /*\\n ...\n        MSTORE \t\t\tcontract DoNothing{\\n    /*\\n ...\n        PUSH 4\t\t\tcontract DoNothing{\\n    /*\\n ...\n        CALLDATASIZE \t\t\tcontract DoNothing{\\n    /*\\n ...\n        LT \t\t\tcontract DoNothing{\\n    /*\\n ...\n        PUSH [tag] 1\t\t\tcontract DoNothing{\\n    /*\\n ...\n        JUMPI \t\t\tcontract DoNothing{\\n    /*\\n ...\n        PUSH 0\t\t\tcontract DoNothing{\\n    /*\\n ...\n        CALLDATALOAD \t\t\tcontract DoNothing{\\n    /*\\n ...\n        PUSH E0\t\t\tcontract DoNothing{\\n    /*\\n ...\n        SHR \t\t\tcontract DoNothing{\\n    /*\\n ...\n        DUP1 \t\t\tcontract DoNothing{\\n    /*\\n ...\n        PUSH 2F576F20\t\t\tcontract DoNothing{\\n    /*\\n ...\n        EQ \t\t\tcontract DoNothing{\\n    /*\\n ...\n        PUSH [tag] 2\t\t\tcontract DoNothing{\\n    /*\\n ...\n        JUMPI \t\t\tcontract DoNothing{\\n    /*\\n ...\n        tag 1\t\t\tcontract DoNothing{\\n    /*\\n ...\n        JUMPDEST \t\t\tcontract DoNothing{\\n    /*\\n ...\n        PUSH 0\t\t\tcontract DoNothing{\\n    /*\\n ...\n        DUP1 \t\t\tcontract DoNothing{\\n    /*\\n ...\n        REVERT \t\t\tcontract DoNothing{\\n    /*\\n ...\n        tag 2\t\t\tfunction doNothing()external p...\n        JUMPDEST \t\t\tfunction doNothing()external p...\n        STOP \t\t\tfunction doNothing()external p...\n        .data\n\n\n    Payble function are cheaper than Non-Payable funciton\n    \n    */\n    function doNothing()external payable {\n\n    }\n\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/03_DoNothing.sol": {
+				"DoNothing": {
+					"abi": [
+						{
+							"inputs": [],
+							"name": "doNothing",
+							"outputs": [],
+							"stateMutability": "payable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/03_DoNothing.sol\":57:3717  contract DoNothing{... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/03_DoNothing.sol\":57:3717  contract DoNothing{... */\n      mstore(0x40, 0x80)\n      jumpi(tag_1, lt(calldatasize, 0x04))\n      shr(0xe0, calldataload(0x00))\n      dup1\n      0x2f576f20\n      eq\n      tag_2\n      jumpi\n    tag_1:\n      0x00\n      dup1\n      revert\n        /* \"contracts/03_DoNothing.sol\":3669:3714  function doNothing()external payable {... */\n    tag_2:\n      tag_3\n      tag_4\n      jump\t// in\n    tag_3:\n      stop\n    tag_4:\n      jump\t// out\n\n    auxdata: 0xa26469706673582212206a633c7054eb3f61a7b8a4e5e3f8dd7241c2b560fb170f277c11218734fe825764736f6c63430008000033\n}\n",
+						"bytecode": {
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50606180601d6000396000f3fe608060405260043610601c5760003560e01c80632f576f20146021575b600080fd5b60276029565b005b56fea26469706673582212206a633c7054eb3f61a7b8a4e5e3f8dd7241c2b560fb170f277c11218734fe825764736f6c63430008000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x61 DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x1C JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x2F576F20 EQ PUSH1 0x21 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x27 PUSH1 0x29 JUMP JUMPDEST STOP JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH11 0x633C7054EB3F61A7B8A4E5 0xE3 0xF8 0xDD PUSH19 0x41C2B560FB170F277C11218734FE825764736F PUSH13 0x63430008000033000000000000 ",
+							"sourceMap": "57:3660:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "608060405260043610601c5760003560e01c80632f576f20146021575b600080fd5b60276029565b005b56fea26469706673582212206a633c7054eb3f61a7b8a4e5e3f8dd7241c2b560fb170f277c11218734fe825764736f6c63430008000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x1C JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x2F576F20 EQ PUSH1 0x21 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x27 PUSH1 0x29 JUMP JUMPDEST STOP JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH11 0x633C7054EB3F61A7B8A4E5 0xE3 0xF8 0xDD PUSH19 0x41C2B560FB170F277C11218734FE825764736F PUSH13 0x63430008000033000000000000 ",
+							"sourceMap": "57:3660:0:-:0;;;;;;;;;;;;;;;;;;;;;3669:45;;;:::i;:::-;;;:::o"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "19400",
+								"executionCost": "75",
+								"totalCost": "19475"
+							},
+							"external": {
+								"doNothing()": "98"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 57,
+									"end": 3717,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212206a633c7054eb3f61a7b8a4e5e3f8dd7241c2b560fb170f277c11218734fe825764736f6c63430008000033",
+									".code": [
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "PUSH",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "CALLDATASIZE",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "LT",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "1"
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "CALLDATALOAD",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "PUSH",
+											"source": 0,
+											"value": "E0"
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "SHR",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "PUSH",
+											"source": 0,
+											"value": "2F576F20"
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "EQ",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "2"
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "tag",
+											"source": 0,
+											"value": "1"
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 3717,
+											"name": "REVERT",
+											"source": 0
+										},
+										{
+											"begin": 3669,
+											"end": 3714,
+											"name": "tag",
+											"source": 0,
+											"value": "2"
+										},
+										{
+											"begin": 3669,
+											"end": 3714,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 3669,
+											"end": 3714,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "3"
+										},
+										{
+											"begin": 3669,
+											"end": 3714,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 3669,
+											"end": 3714,
+											"name": "JUMP",
+											"source": 0,
+											"value": "[in]"
+										},
+										{
+											"begin": 3669,
+											"end": 3714,
+											"name": "tag",
+											"source": 0,
+											"value": "3"
+										},
+										{
+											"begin": 3669,
+											"end": 3714,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 3669,
+											"end": 3714,
+											"name": "STOP",
+											"source": 0
+										},
+										{
+											"begin": 3669,
+											"end": 3714,
+											"name": "tag",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 3669,
+											"end": 3714,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 3669,
+											"end": 3714,
+											"name": "JUMP",
+											"source": 0,
+											"value": "[out]"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {
+							"doNothing()": "2f576f20"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"doNothing\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/03_DoNothing.sol\":\"DoNothing\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/03_DoNothing.sol\":{\"keccak256\":\"0xd0eb2511e52aac9facd0bf458dc0e25064434271d11f3271ae1188a26cc388c7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4e4c8e152ddd6b4e3d179b0d8e4ff441441b2b4c12cbd5ad5732a99231b945e3\",\"dweb:/ipfs/QmcZRMyJZ3QruaYBdTNrmzVtRw27MsN2G4xf8uZ2rqBC1b\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/03_DoNothing.sol": {
+				"ast": {
+					"absolutePath": "contracts/03_DoNothing.sol",
+					"exportedSymbols": {
+						"DoNothing": [
+							6
+						]
+					},
+					"id": 7,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "32:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 6,
+							"linearizedBaseContracts": [
+								6
+							],
+							"name": "DoNothing",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"body": {
+										"id": 4,
+										"nodeType": "Block",
+										"src": "3706:8:0",
+										"statements": []
+									},
+									"functionSelector": "2f576f20",
+									"id": 5,
+									"implemented": true,
+									"kind": "function",
+									"modifiers": [],
+									"name": "doNothing",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 2,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "3687:2:0"
+									},
+									"returnParameters": {
+										"id": 3,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "3706:0:0"
+									},
+									"scope": 6,
+									"src": "3669:45:0",
+									"stateMutability": "payable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 7,
+							"src": "57:3660:0"
+						}
+					],
+					"src": "32:3685:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
