@@ -1,10 +1,52 @@
 {
 	"compiler": {
-		"version": "0.8.0+commit.c7dfd78e"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getAndSetInteger",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getInteger",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setToOne",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setToTwo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setToZero",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -20,24 +62,24 @@
 		"compilationTarget": {
 			"contracts/07_StorageGasCost.sol": "StorageGasCost"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
-			"runs": 10000
+			"enabled": false,
+			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
 		"contracts/07_StorageGasCost.sol": {
-			"keccak256": "0x0b05bd4718498146916d7d37fecabf7cff400b5d2221d83b509e49a7e2b07e03",
+			"keccak256": "0x1edb1b7f6fd716552fb1e4c79fecd7817a548e218f1eca1cd16ac5ca3c2113df",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d4ca68ec0ea8e82e670364b91907a7802b7abeac2d0ad075b57f497c85154408",
-				"dweb:/ipfs/QmdeBfEsCgrfJRmNLt1CfXnhwj7y2Y6yfNPosw75S68h4i"
+				"bzz-raw://124b62350c0559da4741af0477fa910646d4aa2399a409dfb4bac35c54192b2b",
+				"dweb:/ipfs/QmUHtGAZVWSTnVSHJwNrfzJRRfiENizCimDJ8dcNodc7MT"
 			]
 		}
 	},

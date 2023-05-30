@@ -1,0 +1,60 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "setStake128",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setStake256",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/13_VariablePacking.sol": "VariablePackingV2"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/13_VariablePacking.sol": {
+			"keccak256": "0xf20bf661df5406e36fb8285793de42a7df1c5db3d011dda06c93355cf8352c4a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6733f6ea4d799dc5af4618f3fb77f223c340670c1cabf353e31e7af89d388573",
+				"dweb:/ipfs/Qmeyq9Geg6PCmVgGzSnsqcXe3U1s2Ccn2E5cVHC3ft3BEU"
+			]
+		}
+	},
+	"version": 1
+}

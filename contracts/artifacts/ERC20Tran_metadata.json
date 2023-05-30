@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.20+commit.a1b79de6"
 	},
 	"language": "Solidity",
 	"output": {
@@ -18,26 +18,26 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/05_EIP1559.sol": "EIP1559"
+			"contracts/12_ERC20Transfer.sol": "ERC20Tran"
 		},
-		"evmVersion": "london",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
-			"runs": 1000
+			"enabled": false,
+			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"contracts/05_EIP1559.sol": {
-			"keccak256": "0xb126f1d2ffe09d9e6617834346a2c6bc0623bf7b95c37db8a8f814b9f7cbadfa",
+		"contracts/12_ERC20Transfer.sol": {
+			"keccak256": "0xdc0c80c321b6210d0685fc27b9a36a38ca371d6ea47fa85323b264019ddd7455",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0359242bce0ee45d416876bb5da4f4e8d98d0e4b985f80340c15e5c69b2b4d03",
-				"dweb:/ipfs/QmZC4feZKpfGxD6fwd4BNgY8ekSGwr7v2PHaRqQj3eVGBe"
+				"bzz-raw://085db3a563b60940ef3aeba3556fe162fb1e367fea2368383e244ea2192f9ff4",
+				"dweb:/ipfs/QmcTnSVNR6giYnowY629V44G8141oLYRMKVeHz7K5Gh5oY"
 			]
 		}
 	},

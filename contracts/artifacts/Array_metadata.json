@@ -1,17 +1,30 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.20+commit.a1b79de6"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
 				"inputs": [],
-				"name": "heavy25Loops",
+				"name": "getLength",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSlotValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "val",
 						"type": "uint256"
 					}
 				],
@@ -19,29 +32,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "heavy50Loops",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "uint256[]",
+						"name": "_val",
+						"type": "uint256[]"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "light",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -58,9 +58,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/01_Simple.sol": "Simple"
+			"contracts/10_Array.sol": "Array"
 		},
-		"evmVersion": "london",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -72,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/01_Simple.sol": {
-			"keccak256": "0x908230db9ff56e9185a9af69764040ae76f922d2335dadaf1cbcb3d89c02f549",
+		"contracts/10_Array.sol": {
+			"keccak256": "0xe04777c91ec20ab850b6134980613a849a9c025406b75a7d1631bc03704db161",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://937755a017d766fc9f51257f739aa3aa1a08a082c99f803ba57ab746a01f526e",
-				"dweb:/ipfs/QmP45fHcattobTW78XTSGyx1YW3BSn8FPxbrDHS6r4dcRt"
+				"bzz-raw://8eb35d2d23e16b8ccbc718da6db294ff6ab82fd654a26abbd29834afa327d5de",
+				"dweb:/ipfs/QmcTK9VnYggTPEXBPfrq8CLeE9t4gkE6bHT7WytL6De4dk"
 			]
 		}
 	},

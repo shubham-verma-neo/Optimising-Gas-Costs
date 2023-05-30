@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.20+commit.a1b79de6"
 	},
 	"language": "Solidity",
 	"output": {
@@ -282,6 +282,14 @@
 			}
 		],
 		"devdoc": {
+			"events": {
+				"Approval(address,address,uint256)": {
+					"details": "Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance."
+				},
+				"Transfer(address,address,uint256)": {
+					"details": "Emitted when `value` tokens are moved from one account (`from`) to another (`to`). Note that `value` may be zero."
+				}
+			},
 			"kind": "dev",
 			"methods": {
 				"allowance(address,address)": {
@@ -328,16 +336,16 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/06_Optimizer.sol": "Optimizer"
+			"contracts/12_ERC20_Files_Structs_Strings.sol": "ERC20Transfer"
 		},
-		"evmVersion": "london",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": true,
-			"runs": 1000
+			"enabled": false,
+			"runs": 200
 		},
 		"remappings": []
 	},
@@ -374,12 +382,12 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"contracts/06_Optimizer.sol": {
-			"keccak256": "0x2b60cea0c1eb275bfe8cf0c95571d59df7b3c21e6287b2c11ae655af58aadb7e",
+		"contracts/12_ERC20_Files_Structs_Strings.sol": {
+			"keccak256": "0x2b0b540a1484fca86155dd8af370040e1bcdbd42df1bc65d583aa35c71802368",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1d6a4cc29ebd87f2742eb2983798e0f61b02a3410ec749bd5e88badcbb3f32bc",
-				"dweb:/ipfs/QmS6n1whebibDmp8JMkwwi4RgmE7eN8LZpeQwSWoMLDVD9"
+				"bzz-raw://3b053766c525fe2d5d777f4054ae383e862de50cbc6da23d2288d5d3f7fd2ffc",
+				"dweb:/ipfs/Qmb1aHtzyKbmFuEYLyeKWrR7aNoRjrjnDVBDcfq7Ey69ME"
 			]
 		}
 	},
