@@ -13,22 +13,28 @@
 						"type": "uint256"
 					}
 				],
-				"name": "mayBeSet",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"name": "multiplyOverflow",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "i",
+						"name": "result",
 						"type": "uint256"
 					}
 				],
-				"name": "mayBetSet1",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "x",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -45,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/09_SameValue.sol": "SmaeValue"
+			"contracts/21_Reverting.sol": "RevertLate2"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -59,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/09_SameValue.sol": {
-			"keccak256": "0x9e8566025c4efd5db5de09d603bb6d30fd3d6dfba8267875a7249607b604891f",
+		"contracts/21_Reverting.sol": {
+			"keccak256": "0x481a4a0e0b3be6299aacb905f1c4568533ffd734316af41cb16787a82a8d037c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4a03697458bba9e7b4ce4043780cf8a9d0ba945b1fc6cde42d588fb7ab3fd25d",
-				"dweb:/ipfs/QmNgoH3VGeHfLAqS9bvgC8YnSFe1kZdSqZkHkjJFGSKtVR"
+				"bzz-raw://823a8196b85083a635771349c09715d268f0b11f20ac71f70cb0f4d89ee15ab5",
+				"dweb:/ipfs/QmUhbD6EGznVeExXSDkfVK4hHS8nJpAZLzNHdvvK7eURF7"
 			]
 		}
 	},

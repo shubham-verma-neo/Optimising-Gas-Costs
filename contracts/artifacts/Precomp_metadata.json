@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/23_Precomputing.sol": "Precomp"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/23_Precomputing.sol": {
+			"keccak256": "0xd3d8c392b325b976f7fac1094c76e40c637f50e4388b7034c1ddb853e8e72d92",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://782f40774fb468ea40f1608337359239d41dd4f951604db6656939ea684514fb",
+				"dweb:/ipfs/QmcX5Mv2fim6FyCiPiic7QS4vyF9dKPDFVWhHwisFb3GKq"
+			]
+		}
+	},
+	"version": 1
+}

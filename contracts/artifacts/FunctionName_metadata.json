@@ -6,29 +6,42 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "blue",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "i",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "mayBeSet",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "green",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "i",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "mayBetSet1",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "red",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -45,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/09_SameValue.sol": "SmaeValue"
+			"contracts/18_FunctionNames.sol": "FunctionName"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -59,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/09_SameValue.sol": {
-			"keccak256": "0x9e8566025c4efd5db5de09d603bb6d30fd3d6dfba8267875a7249607b604891f",
+		"contracts/18_FunctionNames.sol": {
+			"keccak256": "0x5cede2a08f44d2cc075c8d51460a97a0922b0dc1d81f4cf70f3d443273c489f6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4a03697458bba9e7b4ce4043780cf8a9d0ba945b1fc6cde42d588fb7ab3fd25d",
-				"dweb:/ipfs/QmNgoH3VGeHfLAqS9bvgC8YnSFe1kZdSqZkHkjJFGSKtVR"
+				"bzz-raw://626f80462b48a959c7428f5baa381c6743eddf2d6629122ecf0eeb690f00c8a0",
+				"dweb:/ipfs/QmRDuev6mN5KaRcmRPTgeqRjvP2VC42pREumnEAQv57xbM"
 			]
 		}
 	},

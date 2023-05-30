@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "addToAllowed",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "allowed",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "shortCircuit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/22_ShortCircuit_.sol": "ShortCircuit"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/22_ShortCircuit_.sol": {
+			"keccak256": "0x56627900da11dd074aa9840e72c97c1e5301c5805d7100ed7ed8823bde7c55a6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6497a883f6e431d162e12dc863547e6a8a889bb0be007f6e01514f189d4b154c",
+				"dweb:/ipfs/Qmc62WFwzrzjHg6wSArEke5aXw5ApMK864C3vKs64Zjh2h"
+			]
+		}
+	},
+	"version": 1
+}

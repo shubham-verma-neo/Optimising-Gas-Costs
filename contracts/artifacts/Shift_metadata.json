@@ -9,26 +9,38 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "i",
+						"name": "n",
 						"type": "uint256"
 					}
 				],
-				"name": "mayBeSet",
-				"outputs": [],
-				"stateMutability": "payable",
+				"name": "divideByTwo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "i",
+						"name": "n",
 						"type": "uint256"
 					}
 				],
-				"name": "mayBetSet1",
-				"outputs": [],
-				"stateMutability": "payable",
+				"name": "multiplyByTwo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -45,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/09_SameValue.sol": "SmaeValue"
+			"contracts/20_Shift.sol": "Shift"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -59,12 +71,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/09_SameValue.sol": {
-			"keccak256": "0x9e8566025c4efd5db5de09d603bb6d30fd3d6dfba8267875a7249607b604891f",
+		"contracts/20_Shift.sol": {
+			"keccak256": "0x381dc301d2d683214190e1057158c91b718e9505dbcb5c51479facd0f8474763",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4a03697458bba9e7b4ce4043780cf8a9d0ba945b1fc6cde42d588fb7ab3fd25d",
-				"dweb:/ipfs/QmNgoH3VGeHfLAqS9bvgC8YnSFe1kZdSqZkHkjJFGSKtVR"
+				"bzz-raw://de00a93b74c4c96f40b2d7a0635ce71527fa2436969ee473ace9e48532a550e7",
+				"dweb:/ipfs/QmVJgYqJGotMqWsDM4m5hazHscGh4MSqW3vVjcnDfjoxwo"
 			]
 		}
 	},

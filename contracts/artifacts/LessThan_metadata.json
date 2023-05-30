@@ -9,26 +9,19 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "i",
+						"name": "x",
 						"type": "uint256"
 					}
 				],
-				"name": "mayBeSet",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"name": "lessThan",
+				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "i",
-						"type": "uint256"
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
-				"name": "mayBetSet1",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -45,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/09_SameValue.sol": "SmaeValue"
+			"contracts/19_Operators.sol": "LessThan"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -59,12 +52,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/09_SameValue.sol": {
-			"keccak256": "0x9e8566025c4efd5db5de09d603bb6d30fd3d6dfba8267875a7249607b604891f",
+		"contracts/19_Operators.sol": {
+			"keccak256": "0xa08ac2589281a9a7da72de5ade13b4493db069f90ce3b976dbe5098bb9adea8f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4a03697458bba9e7b4ce4043780cf8a9d0ba945b1fc6cde42d588fb7ab3fd25d",
-				"dweb:/ipfs/QmNgoH3VGeHfLAqS9bvgC8YnSFe1kZdSqZkHkjJFGSKtVR"
+				"bzz-raw://3d956f41af56de04f6a9de417315fa21d166574af2ce6879e2b76e52b6537c22",
+				"dweb:/ipfs/QmXrQUb9N9QPoFkqptAs8oSChmzsfApCSSTBdaRz8RuMRS"
 			]
 		}
 	},
