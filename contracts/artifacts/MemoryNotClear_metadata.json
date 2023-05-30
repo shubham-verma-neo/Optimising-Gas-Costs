@@ -1,0 +1,67 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "testMemoryV1",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testMemoryV2",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testMemoryV3",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/17_MemoryNotClear.sol": "MemoryNotClear"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/17_MemoryNotClear.sol": {
+			"keccak256": "0xb9cf4048128a661b3e4f26e38589074e46e4cf5f58bfab6a68940f8cb31769c3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49ecb6b65f3b7b43a6241edad9d5382797b3403bfed99788689c0e7138e94aa9",
+				"dweb:/ipfs/QmQ9vSVhBzEm2DcqgxfxFVFfPinLgRPUopVWtUhP6CSgT8"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,67 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "testMemoryV1",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testMemoryV2",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testMemoryV3",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/16_MemoryExplosion.sol": "MemoryExplosion"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/16_MemoryExplosion.sol": {
+			"keccak256": "0xe41b6796cb3fbb8601613d1599bbf63d8cb4e51bed020bd326a10afe35885219",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://969f6e899b23f9b7d1025b9a4ee37343a3b22ec6a452da808a82b01194760d2d",
+				"dweb:/ipfs/QmRTJAgT23BLmqs3eDq1YnqQKHazMGv1KnyyXdoKEmJwt3"
+			]
+		}
+	},
+	"version": 1
+}
